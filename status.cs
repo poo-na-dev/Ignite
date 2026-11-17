@@ -2,10 +2,11 @@ using System;
 
 namespace status
 {
-    class you
+    class You
     {
-        static void status
+        static void Omen()
         {
+            Console.WriteLine("");
         }
     }
 }

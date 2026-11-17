@@ -3,3 +3,13 @@ C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.AssemblyInfoInputs.cache
 C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.AssemblyInfo.cs
 C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.csproj.CoreCompileInputs.cache
 C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.sourcelink.json
+C:\Users\Asus\Desktop\Ignite\bin\Debug\net10.0\Ignite.exe
+C:\Users\Asus\Desktop\Ignite\bin\Debug\net10.0\Ignite.deps.json
+C:\Users\Asus\Desktop\Ignite\bin\Debug\net10.0\Ignite.runtimeconfig.json
+C:\Users\Asus\Desktop\Ignite\bin\Debug\net10.0\Ignite.dll
+C:\Users\Asus\Desktop\Ignite\bin\Debug\net10.0\Ignite.pdb
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.dll
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\refint\Ignite.dll
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.pdb
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.genruntimeconfig.cache
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\ref\Ignite.dll

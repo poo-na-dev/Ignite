@@ -20,7 +20,7 @@ namespace main
             {
                 case (1):
                 {
-                    Console.WriteLine("You picked up the "+ item.sword.name);
+                    Console.WriteLine("You picked up the "+ statusitem.sword.name + " and it has " + statusitem.sword.attack + " damage!");
                     break;
                 }
             }
