@@ -17,9 +17,11 @@ namespace item
         }  
         
     }
-    public static class statusitem
+    public static class Statusitem
     {
-        public static Item sword = new Item("Sword",1); 
+        public static Item sword = new Item("Sword",1);
+        public static Item shield = new Item("Shield",1);
+        public static Item staff = new Item("Staff",1); 
     }
 
 }
