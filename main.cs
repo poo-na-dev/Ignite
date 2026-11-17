@@ -1,16 +1,16 @@
 using System.IO;
 using System;
 
-nanmespace awd
+namespace main
 {
-    class add
+    class maingame
     {
-        static void main(string[])
-    {
-        Console.WriteLine();
-        var w, y ,z;
         
-    }
-
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("");
+            var w, y ,z;
+        }
     }
 }
