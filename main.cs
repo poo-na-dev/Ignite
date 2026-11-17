@@ -1,9 +1,10 @@
 using System.IO;
 using System;
+using item;
 
 namespace main
 {
-    class maingame
+    class Maingame
     {
     
         static void Choosestarterweapon()
@@ -15,7 +16,14 @@ namespace main
             Console.WriteLine("3.Staff");
             Console.Write("What is your choie - ");
             int choice = Convert.ToInt32(Console.ReadLine());
-            
+            switch (choice)
+            {
+                case (1):
+                {
+                    Console.WriteLine("You picked up the "+ sword.name);
+                    break;
+                }
+            }
         }
         static void Main(string[] args)
         {

@@ -1,14 +1,24 @@
 using System;
 using System.IO;
+using iteme;
 
-namespace item
+public namespace iteme
 {
-    class all_item
+    public class item
     {
-        static void item()
-        {
-            
+        public int attack;
+        public string name;    
         }
 
     }
+    public class itemstatus
+    {
+        item sword = new item();
+        public void gg()
+        {
+            sword.name = "Sword";
+            sword.attack = 1;
+        }
+    }
+
 }
