@@ -1,17 +1,16 @@
 using System;
 using System.IO;
-using iteme;
 
-public namespace iteme
+namespace item
 {
-    public class item
+    public static class Item
     {
         public int attack;
         public string name;    
         }
 
     }
-    public class itemstatus
+    public class Itemstatus
     {
         item sword = new item();
         public void gg()

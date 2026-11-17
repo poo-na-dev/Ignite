@@ -1,0 +1,5 @@
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Ignite\obj\Debug\net10.0\Ignite.sourcelink.json
