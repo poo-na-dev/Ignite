@@ -4,20 +4,33 @@ namespace CharacterStat
 {
     public class You
     {
-        public int free_point ; 
-        public int Strenght ;
-        public int Defense ;
-        public int Inteligence;
-        public You(int free_point,int Strenght,int Defense,int Inteligence)
+        private int free_point; 
+        private string your_weapon ;
+        private int strenght ;
+        private int defense ;
+        private int inteligence;
+        public int Free_point
         {
-            this.free_point = free_point; 
-            this.Strenght = Strenght;
-            this.Defense = Defense;
-            this.Inteligence = Inteligence;
+            get; set;
         }
-    }
-    public class Charactor
-    {
-        public static You you = new You(10,0,0,0);
+        public string Your_weapon
+        {
+            get; set;
+        }
+        public int Strenght
+        {
+            get; set;
+        }
+        public int Defence
+        {
+            get; set;
+        }
+        public int Inteligence
+        {
+            get; set;
+        }
+        
+
+        
     }
 }

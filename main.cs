@@ -3,22 +3,34 @@ using System;
 using System.Text;
 using item;
 using CharacterStat;
+using System.Security.Cryptography.X509Certificates;
+
+
 
 namespace main
 {
     class Maingame
     {
+        static You ancientone = new You();
+        
+        static void Overallchar()
+        {
+            Console.WriteLine("______________________________\n");
+            Console.WriteLine("-- CHARACTOR STATUS --\n");
+            Console.WriteLine("Strength " +ancientone.Strenght+"\t\t | \tYour equipment");
+            Console.WriteLine("Defence "+ancientone.Defence+"\t\t | \t- Slot 1 : ");
+        }
     
         static void Starterstatus()
         {
-            while (Charactor.you.free_point != 0)
+            while (ancientone.Free_point == 0)
             {
             Console.WriteLine("______________________________\n");
             Console.WriteLine("-- Build your own status --\n");
-            Console.WriteLine("1.Strenght now have "+ Charactor.you.Strenght);
-            Console.WriteLine("2.Defence now have "+ Charactor.you.Defense);
-            Console.WriteLine("3.Inteligence now have "+ Charactor.you.Inteligence +"\n");
-            Console.WriteLine("Now you have free stats "+ Charactor.you.free_point+" points!");
+            Console.WriteLine("1.Strenght now have "+ ancientone.Strenght);
+            Console.WriteLine("2.Defence now have "+ ancientone.Defence);
+            Console.WriteLine("3.Inteligence now have "+ ancientone.Inteligence +"\n");
+            Console.WriteLine("Now you have free stats "+ ancientone.Free_point+" points!");
             Console.Write("Do you favor to add more stat? (y/n) - ");
             char choice = Convert.ToChar(Console.ReadLine());
             if (choice == 'y')
@@ -36,9 +48,9 @@ namespace main
                             {
                                 Console.Write("How many do you want to add? - ");
                                 int count = Convert.ToInt32(Console.ReadLine());
-                                if (count > Charactor.you.free_point) {Console.WriteLine("You add more free point do you have! try again"); break;}
-                                Charactor.you.free_point -= count;
-                                Charactor.you.Strenght += count;
+                                if (count > ancientone.Free_point) {Console.WriteLine("You add more free point do you have! try again"); break;}
+                                ancientone.Free_point -= count;
+                                ancientone.Strenght += count;
                                 Console.WriteLine("\nYou got upgraded Strength "+ count +" point!");
                                 Task.Delay(100000);
                                 break;
@@ -47,9 +59,9 @@ namespace main
                             {
                                 Console.Write("How many do you want to add? - ");
                                 int count = Convert.ToInt32(Console.ReadLine());
-                                if (count > Charactor.you.free_point) {Console.WriteLine("You add more free point do you have! try again"); break;}
-                                Charactor.you.free_point -= count;
-                                Charactor.you.Defense += count;
+                                if (count > ancientone.Free_point) {Console.WriteLine("You add more free point do you have! try again"); break;}
+                                ancientone.Free_point -= count;
+                                ancientone.Defence += count;
                                 Console.WriteLine("\nYou got upgraded Defence "+ count +" point!");
                                 Task.Delay(5000);
                                 break;
@@ -58,9 +70,9 @@ namespace main
                             {
                                 Console.Write("How many do you want to add? - ");
                                 int count = Convert.ToInt32(Console.ReadLine());
-                                if (count > Charactor.you.free_point) {Console.WriteLine("You add more free point do you have! try again"); break;}
-                                Charactor.you.free_point -= count;
-                                Charactor.you.Inteligence += count;
+                                if (count > ancientone.Free_point) {Console.WriteLine("You add more free point do you have! try again"); break;}
+                                ancientone.Free_point -= count;
+                                ancientone.Inteligence += count;
                                 Console.WriteLine("\nYou got upgraded Inteligence "+ count +" point!");
                                 Task.Delay(5000);
                                 break;
@@ -73,10 +85,9 @@ namespace main
                             }
                     }
             Console.Clear();
-
             }else
                 {
-                    Charactor.you.free_point = 0;
+                    ancientone.Free_point = 0;
                     break;
                 }
             }
@@ -86,6 +97,7 @@ namespace main
             bool check = true;
             while (check)
             {
+
                 Console.WriteLine("______________________________\n");
                 Console.WriteLine("-- Choose your weapon --\n");
                 Console.WriteLine("1.Sword");
@@ -98,18 +110,21 @@ namespace main
                 case (1):
                 {
                     Console.WriteLine("You picked up the "+ Statusitem.sword.name + " and it has " + Statusitem.sword.attack + " damage!");
+                    ancientone.Your_weapon = "Sword";
                     check = false;
                     break;
                 }
                 case (2):
                 { 
                     Console.WriteLine("You picked up the "+ Statusitem.shield.name + " and it has " + Statusitem.shield.attack + " damage!");
+                    ancientone.Your_weapon = "Shield";
                     check = false;
                     break;
                 }
                 case (3):
                 {
                     Console.WriteLine("You picked up the "+ Statusitem.staff.name + " and it has " + Statusitem.staff.attack + " damage!");
+                    ancientone.Your_weapon = "Staff";
                     check = false;
                     break;
                 }
@@ -122,8 +137,9 @@ namespace main
                 Task.Delay(1000);
             }
         }
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            
             Console.WriteLine("______________________________\n");
             Console.WriteLine("-- IGNITE GAME --\n");
             Console.WriteLine("- 1.Enter to game");
@@ -136,6 +152,8 @@ namespace main
                 Choosestarterweapon();
                 Console.Clear();
                 Starterstatus();
+                Console.Clear();
+                Overallchar();
             }
             else
             {
